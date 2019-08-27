@@ -1,15 +1,17 @@
 var katzDeli = [];
 var otherDeli = ["Steven", "Blake", "Avi"];
-
-function takeANumber(katzDeli, name) {
-  katzDeli.push(`${name}`);
-  return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+let x = 0
+function takeANumber(katzDeli) {
+  debugger
+  katzDeli.push(x);
+  x++;
+  return(`Welcome, You are number ${katzDeli.length} in line.`);
 }
 function nowServing(katzDeliLine) {
-  let n = 0; 
-  while (n < katzDeliLine.length) {
-    n++;
-  }
+  // let n = 0; 
+  // while (n < katzDeliLine.length) {
+ //   n++;
+ //  }
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
   }
